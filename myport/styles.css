@@ -1,0 +1,256 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+html,
+body {
+  margin: 0;
+  padding: 0;
+  color: aliceblue;
+  z-index: -1000;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.header {
+  margin: 0 auto;
+
+  z-index: 1000;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-container {
+  margin: 20px;
+  width: 150px;
+  height: 150px;
+}
+
+.image {
+  max-width: 100%;
+  max-height: 100%;
+  border: 2px solid aliceblue;
+  border-radius: 50%;
+}
+
+.heading {
+  margin-top: 50px;
+  text-align: center;
+
+}
+
+.primary-heading {
+  
+  
+  background-image: linear-gradient(45deg, #f3ec78, #af4261);
+  
+  background-size: 100%;
+  background-repeat: repeat;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  font-size: 32px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  margin: 0 auto;
+
+}
+
+.secondary-heading {
+  font-size: 16px;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  letter-spacing: 12.8px;
+  margin: 0;
+}
+
+.social-icons {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 200px;
+  width: 50px;
+  border : 2px solid;
+  border-image-slice:1;
+  border-image-source: linear-gradient(to bottom, #f3ec78 0%, #af4261 100%);
+  position: fixed;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.icon {
+  border-bottom: 2px solid;
+  border-image-slice:1;
+  border-image-source: linear-gradient(to bottom, #f3ec78 20%, #af4261 100%);
+  width: 100%;
+  padding-bottom: 10px;
+  text-align: center;
+  align-self: center;
+}
+
+
+
+
+.icon:last-child {
+  padding-top: 0;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.icon:first-child {
+
+  padding-top: 7px;
+  
+}
+
+
+
+.fab:hover {
+
+  color: tomato;
+  cursor: pointer;
+  
+
+}
+
+@media screen and (max-width:768px) {
+
+  .social-icons {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    width: 200px;
+    border-right : 2px solid;
+    border-image-slice:1;
+    border-image-source: linear-gradient(to bottom, #f3ec78 0%, #af4261 100%);
+    position: fixed;
+    top: 96%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+
+  }
+
+  .icon {
+    border-bottom: none;
+    border-right: 2px solid;
+    border-image-slice:1;
+    border-image-source: linear-gradient(to bottom, #f3ec78 20%, #af4261 100%);
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 7px;
+    text-align: center;
+    align-self: center;
+    padding-top: 7px;
+  }
+
+  .fab:hover {
+
+    color: tomato;
+    cursor: pointer;
+  
+  }
+
+  .icon:last-child {
+    border-right: none;
+  }
+
+  
+}
+
+.contact {
+  font-family: 'Inconsolata', monospace;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  font-size: 12px;
+  text-align: center;
+  animation-name: top-to-down;
+  position: absolute;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  top: 80%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  line-height: 2;
+}
+
+.kitty {
+  
+
+  font-size: 32px;
+  letter-spacing: 2px;
+}
+
+@keyframes top-to-down {
+
+  0% {
+
+    top:60%;
+    left:50%;
+    transform: translate(-50%,-50%);
+  }
+  100% {
+
+    top: 80%;
+    left:50%;
+    transform: translate(-50%,-50%);
+  }
+  
+}
+
+
+
+a {
+  text-decoration: none;
+  color: white;
+  
+}
+
+.line1 {
+  letter-spacing: 16px;
+}
+
+.line2 {
+  letter-spacing: 6px;
+}
+
+.kitty {
+  background-image: linear-gradient(45deg, #f3ec78, #af4261);
+  
+  background-size: 100%;
+  background-repeat: repeat;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+ #particles-js{
+   position: absolute;
+   top: 0;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(13,20,34);
+    background-image: url('');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+
+  } 
+  
